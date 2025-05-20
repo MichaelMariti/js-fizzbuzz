@@ -7,3 +7,23 @@
 // Consigli del giorno:
 // - scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // - proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
+
+console.log ('fizz buzz')
+
+for (let i = 0; i < 100; i++) {
+    const n = i + 1
+    const resto3 = n % 3
+    const resto5 = n % 5
+    const resto15 = n % 15
+
+    if (resto15 === 0) {
+        console.log('FizzBuzz')
+    } else if (resto5 === 0) {
+        console.log('Buzz')
+    } else if (resto3 === 0) {
+        console.log ('Fizz')
+    } else {
+        console.log (n)
+    }
+
+}
